@@ -25,6 +25,13 @@ function addTodo() {
   const textNode = document.createTextNode(text);
   const button = document.createElement("button");
 
+  // li 요소 - input, textNode, button 추가
+  li.appendChild(checkbox);
+  li.appendChild(textNode);
+  li.appendChild(button);
+  // todoBoard - li 추가
+  todoBoard.append(li);
+
   // todoInput.value값을 빈값으로
   todoInput.value = "";
   todoInput.focus();
@@ -32,13 +39,6 @@ function addTodo() {
   button.innerHTML = "X";
   // checkbox를 눌렀을 때 event listener 실행 : click
   checkbox.addEventListener("click", todoCheck);
-
-  // li 요소 - input, textNode, button 추가
-  li.appendChild(checkbox);
-  li.appendChild(textNode);
-  li.appendChild(button);
-  // todoBoard - li 추가
-  todoBoard.append(li);
 
   // x button을 눌렀을 때 event listener 실행 : click
   button.addEventListener("click", todoDelete);

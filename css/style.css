@@ -1,7 +1,58 @@
-body {
+.hidden {
+  display: none;
+}
+
+#clock {
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 7px black;
+  font-size: 4em;
+}
+
+#title {
   color: white;
 }
 
-.hidden {
-  display: none;
+form {
+  text-align: center;
+}
+
+form input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+}
+
+form input[type="text"]:focus {
+  outline: none;
+}
+
+form input[type="submit"],
+form input[type="button"],
+#todo-board li button {
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+form input[type="button"]:hover,
+form input[type="submit"]:hover,
+#todo-board li button:hover {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+#todo-board {
+  list-style: none;
+  margin-right: 40px;
+}
+#todo-board li {
+  color: white;
+  clear: both;
+  margin-top: 10px;
+}
+#todo-board li button {
+  float: right;
 }
