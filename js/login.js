@@ -18,7 +18,7 @@ function onLoginSubmit(e) {
 
   // if문을 사용, name값이 없을 때 아래의 내용이 실행되지 않음
   // 함수에서 return을 사용하면 함수 종료
-  if (name == "") {
+  if (name === "") {
     return;
   }
   // value값을 title에 넣어줌
